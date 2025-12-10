@@ -1,0 +1,44 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2022.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'zeqiangz' on host 'reactor' (Linux_x86_64 version 5.14.0-1042-oem) on Fri Jul 08 18:27:59 PDT 2022
+INFO: [HLS 200-10] On os Ubuntu 20.04.4 LTS
+INFO: [HLS 200-10] In directory '/home/zeqiangz/test0'
+Sourcing Tcl script '/home/zeqiangz/test0/VecaddTest0/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/zeqiangz/test0/VecaddTest0/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project VecaddTest0 
+INFO: [HLS 200-10] Opening project '/home/zeqiangz/test0/VecaddTest0'.
+INFO: [HLS 200-1510] Running: set_top pl_vecadd 
+INFO: [HLS 200-1510] Running: add_files pl_vecadd.cpp 
+INFO: [HLS 200-10] Adding design file 'pl_vecadd.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/zeqiangz/test0/VecaddTest0/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2022.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -version=1.0.0
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -version 1.0.0 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'pl_vecadd_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'pl_vecadd_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'pl_vecadd_fadd_32ns_32ns_32_5_full_dsp_1_ip'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  8 18:28:20 2022...
+INFO: [HLS 200-802] Generated output file VecaddTest0/solution1/impl/export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 18.28 seconds. CPU system time: 1.84 seconds. Elapsed time: 20.69 seconds; current allocated memory: -1023.898 MB.
+INFO: [HLS 200-112] Total CPU user time: 23.11 seconds. Total CPU system time: 3.03 seconds. Total elapsed time: 24 seconds; peak allocated memory: 762.637 MB.
